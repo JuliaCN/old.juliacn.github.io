@@ -1,0 +1,76 @@
+---
+layout: default
+---
+
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+</article>
+
+{% if page.mathjax %}
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+	  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+	});
+</script>
+{% endif %}
+
+{% if page.comments %}
+
+<div id="disqus_thread"></div>
+<a href="https://disqus.com/">Comments powered by Disqus.</a>
+<br><br>
+<p>建议以Disqus用户身份进行评论。如果是游客请选中 <strong>"I'd rather post as a guest"</strong></p>
+<p>在段落侧面也可以进行评论。评论可能需要一定时间加载。如果不能正确显示，请确保您在非移动端查看此篇文章。</p>
+
+<script>
+	var disqus_config = function () {
+		this.page.url = '{{ site.url }}{{ page.url }}';
+		this.page.identifier = '{{ page.id }}'; 
+	};
+
+	(function() { // DON'T EDIT BELOW THIS LINE
+		var d = document, s = d.createElement('script');
+		s.src = '//{{ site.disqus_shortname }}.disqus.com/embed.js';
+		s.setAttribute('data-timestamp', +new Date());
+		(d.head || d.body).appendChild(s);
+	})();
+</script>
+
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+<!-- put it after jQuery -->
+<script src="/scripts/inlineDisqussions.js"></script>
+<link rel="stylesheet" type="text/css" href="/scripts/inlineDisqussions.css" />
+<script>
+  disqus_shortname = "{{ site.disqus_shortname }}";
+  jQuery(document).ready(function() {
+    jQuery("p").inlineDisqussions({
+      identifier: 'disqussion',
+      displayCount: true,
+      highlighted: false,
+      position: 'right',
+      background: 'white',
+      maxWidth: 9999
+    });	
+  });
+</script>
+<script>
+
+</script>
+<!-- Force inline-Disqussion
+<p data-disqus-identifier="disqussion-12">Lorem ipsum...</p> 
+-->
+
+{% endif %}
+
+
