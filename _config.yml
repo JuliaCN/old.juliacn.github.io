@@ -11,9 +11,9 @@ permalink   : /:year/:title/
 markdown    : kramdown
 
 # SEO settings
-title: dotX
-description: "A free Jekyll theme for download"
-keywords: "Jekyll, theme, free, download, SEO, blog, web"
+title: USTC UAV Club 
+description: "UAV club of University of Science and Technology of China"
+keywords: "UAV,student club,USTC"
 
 # Site settings
 url: http://ustc-uav.github.io/
