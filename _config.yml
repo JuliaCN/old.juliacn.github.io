@@ -16,8 +16,8 @@ description: "A free Jekyll theme for download"
 keywords: "Jekyll, theme, free, download, SEO, blog, web"
 
 # Site settings
-url: http://nandomoreira.me
-baseurl: "/dotX"
+url: http://ustc-uav.github.io/
+
 # baseurl: ""
 
 # Author settings
@@ -34,7 +34,7 @@ author:
   linkedin  : http://linkedin.com/in/nandomoreirame
 
 # google_analytics: UA-52446115-1
-repo: http://github.com/nandomoreirame/dotX
+# repo: http://github.com/nandomoreirame/dotX
 
 # comments
 disqus_shortname: "fernandomoreira"
