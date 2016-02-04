@@ -5,10 +5,16 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
+source: source
+destination: _site
+sass:
+  sass_dir: _sass
+  style: expanded # compressed # expanded
 
 # permalink and highlighter
 permalink   : /:year/:title/
 markdown    : kramdown
+highlighter : pygments
 
 # SEO settings
 title: dotX
