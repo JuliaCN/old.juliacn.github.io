@@ -22,7 +22,7 @@
     @include center; // mixin inside partials > _mixins.scss
     width: 22px;
     height: 2px;
-    background-color: $white-color;
+    background-color: $dark-gray-color;
 
     &::before, &:after {
       /* upper and lower lines of the menu icon */

@@ -30,14 +30,18 @@ $base-z-index: 0;
 
 // Colors
 //
-$primary-color: #3cc76a;
+// $primary-color: #3cc76a;
+$primary-color: #fff;
 $white-color: #fff;
 $black-color: #000;
 $blue-color: #477dca;
-$dark-gray-color: lighten($black-color, 25%);
+$dark-gray-color: lighten($black-color, 0%);
 $medium-gray-color: lighten($dark-gray-color, 20%);
 $light-gray-color: lighten($medium-gray-color, 20%);
 $lighter-gray-color: lighten($light-gray-color, 20%);
+$julia-green-color: #00CC00;
+$julia-red-color: #FF0000;
+$julia-purple-color: #9966FF;
 
 // Font Colors
 //
