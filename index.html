@@ -5,7 +5,6 @@ subtitle: Chinese Julia Community
 ---
 
 <section class="post-list">
-
   <header class="post-header intro">
     <div class="intro-in">
         <h1 class="post-title">Julia中文社区</h1>
@@ -13,10 +12,17 @@ subtitle: Chinese Julia Community
         <hr>
         <h2 class="intro-subtitle">2016 Julia User Meetup 要来啦~</h2>
         <h2 class="intro-subtitle">五月来深圳和大家分享你的想法吧!</h2>
-        <a href="{{ site.url }}/meetup" class="button button-ghost" role="button">报名 2016小聚@深圳</a>
+        <a id="meetupform" href="{{ site.url }}/meetup" class="button button-ghost" role="button">报名 2016小聚@深圳</a>
     </div>
   </header>
 </section>
+
+<script type="text/javascript">
+var meetup_button = document.getElementById('meetupform');
+if (!!navigator.userAgent.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/))
+  meetup_button.href = "https://jinshuju.net/f/Ht1pDy"
+}
+</script>
 
 <!-- <section class="intro">
   {% include navbar.html %}
