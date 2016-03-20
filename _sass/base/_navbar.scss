@@ -22,7 +22,7 @@
     @include center; // mixin inside partials > _mixins.scss
     width: 22px;
     height: 2px;
-    background-color: $dark-gray-color;
+    background-color: $lighter-gray-color;
 
     &::before, &:after {
       /* upper and lower lines of the menu icon */
@@ -117,7 +117,7 @@
   width: 100%;
   text-align: center;
   visibility: hidden;
-  background-color: tint($black-color, 5%);
+  background-color: tint($light-gray-color, 5%);
   @include transition(visibility 0s $animation-duration);
 
   .navigation-wrapper {
