@@ -54,9 +54,44 @@ subtitle: Chinese Julia Community
     <hr>
 
     <h1>高性能的JIT编译器</h1>
-    <p>Julia’s LLVM-based just-in-time (JIT) compiler combined with the language’s design allow it to approach and often match the performance of C.
-To get a sense of relative performance of Julia compared to other languages that can or could be used for numerical and scientific computing, we’ve written a small set of micro-benchmarks in a variety of languages:
-  </p>
+    <p>通过使用类型推断和 即时(JIT)编译 ，以及 LLVM ， Julia 具有可选的类型声明，重载，高性能等特性。为了能让您对Julia的性能和其它语言在数值计算和科学计算中有一个更好的比较，我们为多种不同语言写了一些简单的标准测试程序：
+    </p>
+    <div class="figure">
+    <table class="benchmarks">
+      <colgroup>
+      <col class="name" />
+      <col class="relative" span="11" />
+      </colgroup>
+      <thead>
+      <tr><td></td><th class="system">Fortran</th><th class="system">Julia</th><th class="system">Python</th><th class="system">R</th><th class="system">Matlab</th><th class="system">Octave</th><th class="system">Mathe-matica</th><th class="system">JavaScript</th><th class="system">Go</th><th class="system">LuaJIT</th><th class="system">Java</th></tr>
+      <tr><td></td><td class="version">gcc 5.1.1
+      </td><td class="version">0.4.0
+      </td><td class="version">3.4.3
+      </td><td class="version">3.2.2
+      </td><td class="version">R2015b
+      </td><td class="version">4.0.0
+      </td><td class="version">10.2.0
+      </td><td class="version">V8 3.28.71.19
+      </td><td class="version">go1.5
+      </td><td class="version">gsl-shell 2.3.1
+      </td><td class="version">1.8.0_45
+      </td></tr>
+      </thead>
+      <tbody>
+      <tr><th>fib</th><td class="data">0.70</td><td class="data">2.11</td><td class="data">77.76</td><td class="data">533.52</td><td class="data">26.89</td><td class="data">9324.35</td><td class="data">118.53</td><td class="data">3.36</td><td class="data">1.86</td><td class="data">1.71</td><td class="data">1.21</td></tr>
+      <tr><th>parse_int</th><td class="data">5.05</td><td class="data">1.45</td><td class="data">17.02</td><td class="data">45.73</td><td class="data">802.52</td><td class="data">9581.44</td><td class="data">15.02</td><td class="data">6.06</td><td class="data">1.20</td><td class="data">5.77</td><td class="data">3.35</td></tr>
+      <tr><th>quicksort</th><td class="data">1.31</td><td class="data">1.15</td><td class="data">32.89</td><td class="data">264.54</td><td class="data">4.92</td><td class="data">1866.01</td><td class="data">43.23</td><td class="data">2.70</td><td class="data">1.29</td><td class="data">2.03</td><td class="data">2.60</td></tr>
+      <tr><th>mandel</th><td class="data">0.81</td><td class="data">0.79</td><td class="data">15.32</td><td class="data">53.16</td><td class="data">7.58</td><td class="data">451.81</td><td class="data">5.13</td><td class="data">0.66</td><td class="data">1.11</td><td class="data">0.67</td><td class="data">1.35</td></tr>
+      <tr><th>pi_sum</th><td class="data">1.00</td><td class="data">1.00</td><td class="data">21.99</td><td class="data">9.56</td><td class="data">1.00</td><td class="data">299.31</td><td class="data">1.69</td><td class="data">1.01</td><td class="data">1.00</td><td class="data">1.00</td><td class="data">1.00</td></tr>
+      <tr><th>rand_mat_stat</th><td class="data">1.45</td><td class="data">1.66</td><td class="data">17.93</td><td class="data">14.56</td><td class="data">14.52</td><td class="data">30.93</td><td class="data">5.95</td><td class="data">2.30</td><td class="data">2.96</td><td class="data">3.27</td><td class="data">3.92</td></tr>
+      <tr><th>rand_mat_mul</th><td class="data">3.48</td><td class="data">1.02</td><td class="data">1.14</td><td class="data">1.57</td><td class="data">1.12</td><td class="data">1.12</td><td class="data">1.30</td><td class="data">15.07</td><td class="data">1.42</td><td class="data">1.16</td><td class="data">2.36</td></tr>
+      </tbody>
+    </table>
+
+    <p class="caption"><b>Figure:</b>
+    基准测试时间是相对于C 语言的(时间越短越好, C 的用时为单位1).
+    </p>
+    </div>
 </div>
 
 
