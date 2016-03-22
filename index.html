@@ -11,12 +11,12 @@ subtitle: Chinese Julia Community
         <h1 class="post-title">Julia中文社区</h1>
         <h2 class="intro-subtitle">Chinese Julia Community</h2>
         <h3 >QQ 群：USTC Julia User Group（316628299，USTC附近活动讨论）</h3>
-        <h3>JuliaLang中文（社区建设等，188374671）</h3>
-        <h3>Julia语言入门（254087649）</h3>
+        <h3>JuliaLang中文（社区建设等，188374671），Julia语言入门（254087649）</h3>
+        <a id="downloads" href="/downloads" class="button button-julia-green" role="button">安装Julia</a>
         <hr>
         <h2 class="intro-subtitle">2016 Julia User Meetup 要来啦～</h2>
         <h2 class="intro-subtitle">五月来深圳和大家分享你的想法吧！</h2>
-        <a id="meetupform" href="{{ site.url }}/meetup" class="button button-ghost" role="button">报名 2016小聚@深圳</a>
+        <a id="meetupform" href="{{ site.url }}/meetup" class="button button-julia-red" role="button">报名 2016小聚@深圳</a>
     </div>
   </header>
 </section>
@@ -57,7 +57,7 @@ subtitle: Chinese Julia Community
     <p>通过使用类型推断和 即时(JIT)编译 ，以及 LLVM ， Julia 具有可选的类型声明，重载，高性能等特性。为了能让您对Julia的性能和其它语言在数值计算和科学计算中有一个更好的比较，我们为多种不同语言写了一些简单的标准测试程序：
     </p>
     <div class="figure">
-    <table class="benchmarks">
+    <table class="responsive">
       <colgroup>
       <col class="name" />
       <col class="relative" span="11" />
@@ -91,9 +91,16 @@ subtitle: Chinese Julia Community
     <p class="caption"><b>Figure:</b>
     基准测试时间是相对于C 语言的(时间越短越好, C 的用时为单位1).
     </p>
-    </div>
-</div>
 
+    <p class="note">
+    C 和 Fortran 语言使用了 gcc 5.11 编译， 使用最佳的优化 （从-O0到 -O3）。 C，Fortran，Go和Julia都使用了<a href="https://github.com/xianyi/OpenBLAS">OpenBLAS</a> v0.2.14.Python 3 通过 <a href="https://www.continuum.io/downloads">Anaconda distribution</a> 安装。rand_mat_stat 和 rand_mat_mul 算法在Python中通过numpy(v1.9.2)中的函数实现，其它部分均为纯Python语言实现。
+<!-- Benchmarks can also be seen <a href="/benchmarks/">here as a plot</a> created
+with <a href="https://github.com/dcjones/Gadfly.jl">Gadfly</a>.
+ --></p>
+
+
+ </div>
+</div>
 
 <script type="text/javascript">
 var meetup_button = document.getElementById('meetupform');

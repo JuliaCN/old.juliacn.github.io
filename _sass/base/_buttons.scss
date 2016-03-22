@@ -44,4 +44,26 @@
       background-color: rgba($white-color, .1);
     }
   }
+
+  &.button-julia-red {
+    background-color: transparent;
+    border: 1px solid #000;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: rgba($julia-red-color, .1);
+    }
+  }
+
+  &.button-julia-green {
+    background-color: transparent;
+    border: 1px solid #000;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: rgba($julia-green-color, .1);
+    }
+  }
 }
