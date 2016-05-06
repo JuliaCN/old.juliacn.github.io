@@ -15,12 +15,7 @@ subtitle: Recruitment
     </div>
   </header>
 
-    <article class="post-item container">
-    <h1>海普洛斯招聘对癌症和基因数据分析有兴趣的Julian</h1>
-    <h2>请把简历发送至hr@haplox.com</h2>
-    </article>
-
-<!--   {% for post in site.posts %}
+  {% for post in site.categories.recruitment %}
     <article class="post-item container">
       <header>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
@@ -31,6 +26,6 @@ subtitle: Recruitment
 
       <p>{{ post.content | strip_html | truncatewords: 56 }} <a href="{{ post.url | prepend: site.baseurl }}" title="Permalink to: {{ post.title }}" class="read-more">Read more</a></p>
     </article>
-  {% endfor %} -->
+  {% endfor %}
 
 </section>

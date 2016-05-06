@@ -13,6 +13,11 @@ Julia机器人 **JetAlpha** 请戳 [KDr2/JetAlpha](https://github.com/KDr2/JetAl
 
 `recruitment` 用来添加招聘信息
 
+### 如何添加招聘
+
+- 在post里新建一个markdown文件,文件名格式为 `year`-`month`-`day`-`title`.md
+- markdown文件中仿照[招聘样例]()
+
 `meetup` Meetup信息请添加在这里
 
 
