@@ -11,9 +11,20 @@ subtitle: Recruitment
       <h1 class="post-title">{{ page.title }}</h1>
       {% if page.subtitle %}
         <h2 class="intro-subtitle">{{ page.subtitle }}</h2>
-      {% endif %}
+        {% endif %}
+      <h2 class="intro-subtitle">如果需要添加招聘信息,请参考<a href="/2016/recruitment-help/">instructions</a> </h2>
     </div>
   </header>
+
+  <article class="post-item container">
+    <header>
+      <h1 class="post-title">
+        <a class="post-link" href="/instructions">如何发布招聘广告</a>
+      </h1>
+    </header>
+
+    <p>{{ post.content | strip_html | truncatewords: 56 }} <a href="{{ post.url | prepend: site.baseurl }}" title="Permalink to: {{ post.title }}" class="read-more">Read more</a></p>
+  </article>
 
   {% for post in site.categories.recruitment %}
     <article class="post-item container">
