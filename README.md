@@ -13,7 +13,24 @@ Julia机器人 **JetAlpha** 请戳 [KDr2/JetAlpha](https://github.com/KDr2/JetAl
 
 `recruitment` 用来添加招聘信息
 
+### 如何添加招聘
+
+- 在`_post`里新建一个markdown文件,文件名格式为 `year`-`month`-`day`-`title`.md
+- markdown文件中仿照[招聘样例](https://github.com/JuliaCN/juliacn.github.io/blob/rogerluo/_posts/2016-05-01-haplox.md)
+- 注意`categories` 应为 `recruitment`
+- 提交您的PR (pull request即可)
+- 如果您不熟悉github和jekyll可以将招聘的文案写好,提交一个issue由我们来帮助发布招聘广告.
+
 `meetup` Meetup信息请添加在这里
+
+### 如何添加meetup
+
+- 请先在此repo开一个issue,与我们联系组织meetup相关事宜
+- 在`_post`里新建一个markdown文件,文件名格式为 `year`-`month`-`day`-`title`.md
+- markdown文件中仿照[2016年深圳小聚](https://github.com/JuliaCN/juliacn.github.io/blob/rogerluo/_posts/2016-03-19-2016-user-meetup.md)
+- 注意`categories` 应为 `meetups`
+- 提交您的PR (pull request即可)
+- 如果您不熟悉github和jekyll可以将文案写好,提交一个issue由我们来帮助发布.
 
 
 ## 如何在本地编辑此网站
