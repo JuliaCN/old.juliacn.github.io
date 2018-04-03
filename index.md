@@ -110,8 +110,6 @@ This continuous spectrum of programming levels is a hallmark of the Julia approa
 
 # 为分布式与云计算设计
 
-Julia并没有给
-
 Julia does not impose any particular style of parallelism on the user.
 Instead, it provides a number of [key building blocks for distributed computation](/manual/parallel-computing), making it flexible enough to support a number of styles of parallelism, and allowing users to add more.
 The following simple example demonstrates how to count the number of heads in a large number of coin tosses in parallel.
