@@ -7,7 +7,7 @@ title: Julia中文社区
 subtitle:
 description:
 keywords:
-author: John Doe
+author: JuliaCN
 language:
 timezone:
 
@@ -15,7 +15,7 @@ timezone:
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://juliacn.com
 root: /
-permalink: :year/:month/:day/:title/
+permalink: /blog/:year/:month/:day/:title/
 permalink_defaults:
 
 # Directory
@@ -73,7 +73,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: vexo
+theme: bootstrap-blog
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
