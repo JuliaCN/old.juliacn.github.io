@@ -4,6 +4,7 @@ menu:
   主页: index.html
   Julia语言: julialang/
   下载: downloads/
+  文档: docs/
   关于: about/
   归档: archives/
 rss: /atom.xml
