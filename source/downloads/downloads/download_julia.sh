@@ -60,3 +60,4 @@ download_julia(){
 }
 
 download_julia 0.6.3
+download_julia 0.7.0-beta
