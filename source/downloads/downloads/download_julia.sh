@@ -17,32 +17,36 @@ get_url(){
     julia_url="$base_url-win64.exe"
   elif [[ "$platform" == "freebsd/x64" ]]; then
     julia_url="$base_url-freebsd-x86_64.tar.gz"
-  else
+  elif [[ $platform == "source/any" ]]; then
     julia_url="https://github.com/JuliaLang/julia/releases/download/v$version/julia-$version.tar.gz"
   fi
+  echo $julia_url
 }
 
 download(){
-  echo "Start to Download $1 from julialang server"
-  for arch in "x86" "x64"; do
-    for platform in "linux" "winnt" "freebsd"; do
-      get_url $platform $arch $1
-      echo "Download: $julia_url"
-      wget $julia_url
-    done
-  done
-
-  get_url linux armv7l $1
-  echo "Download: $julia_url"
-  wget $julia_url
-
-  get_url linux aarch64 $1
-  echo "Download: $julia_url"
-  wget $julia_url
-
-  get_url "source" "" $1
-  echo "Download: $julia_url"
-  wget $julia_url
+  echo "Download: $1"
+  wget $1
 }
 
-download 0.6.3
+download_julia(){
+  echo "Start to Download $1 from julialang server"
+  for arch in "x86" "x64"; do
+
+    for platform in "linux" "winnt" "freebsd"; do
+      url="$(get_url $platform $arch $1)"
+      download $url
+    done
+
+  done
+
+  url="$(get_url linux armv7l $1)"
+  download $url
+
+  url="$(get_url linux aarch64 $1)"
+  download $url
+
+  url="$(get_url "source" any $1)"
+  download $url
+}
+
+download_julia 0.6.3
