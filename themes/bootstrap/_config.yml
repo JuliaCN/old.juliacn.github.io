@@ -22,7 +22,7 @@ widgets:
 - archive
 - recent_posts
 about_widget_content: >
-  <p>这里是<a href="about/">Julia中文社区</a>，关于Julia语言请点击：<a href="julialang">Julia语言</a>，关于社区，请点击：<a href="about">Julia中文社区</a>。</p>
+  <p>这里是<a href="/about">Julia中文社区</a>，关于Julia语言请点击：<a href="/julialang">Julia语言</a>，关于社区，请点击：<a href="/about">Julia中文社区</a>。</p>
 
 # widget behavior
 archive_type: 'monthly'
