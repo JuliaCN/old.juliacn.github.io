@@ -1,8 +1,11 @@
 # Header
 navbar_brand: false
 menu:
-  Home: index.html
-  Archives: archives/
+  主页: index.html
+  Julia语言: julialang/
+  下载: downloads/
+  关于: about/
+  归档: archives/
 rss: /atom.xml
 
 # Content
@@ -18,9 +21,7 @@ widgets:
 - archive
 - recent_posts
 about_widget_content: >
-  <p>Etiam porta <em>sem malesuada magna</em> mollis euismod.
-  Cras mattis consectetur purus sit amet fermentum. Aenean
-  lacinia bibendum nulla sed consectetur.</p>
+  <p>这里是Julia中文社区，关于Julia语言请点击：Julia语言，关于社区，请点击：Julia中文社区。</p>
 
 # widget behavior
 archive_type: 'monthly'
