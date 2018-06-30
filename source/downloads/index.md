@@ -78,34 +78,34 @@ date: 2018-06-30 16:36:52
 <tbody>
 <tr>
     <th rowspan="2"> Windows Self-Extracting Archive (.exe) <a href="platform.html#windows">[help]</a></th>
-    <td colspan="3"> <a href="https://julialang-s3.julialang.org/bin/winnt/x86/0.7/julia-0.7.0-beta-win32.exe">32-bit</a> </td>
-    <td colspan="3"> <a href="https://julialang-s3.julialang.org/bin/winnt/x64/0.7/julia-0.7.0-beta-win64.exe">64-bit</a> </td>
+    <td colspan="3"> <a href="downloads/julia-0.7.0-beta-win32.exe">32-bit</a> </td>
+    <td colspan="3"> <a href="downloads/julia-0.7.0-beta-win64.exe">64-bit</a> </td>
 </tr>
 <tr>
     <td colspan="6">Windows 7/Windows Server 2012 用户同时需要安装 <a href="https://support.microsoft.com/en-us/help/3140245/update-to-enable-tls-1-1-and-tls-1-2-as-a-default-secure-protocols-in">TLS "Easy Fix" update</a>, and <a href="https://docs.microsoft.com/en-us/powershell/wmf/readme">Windows Management Framework 3.0 or later</a></td>
 </tr>
 <tr>
     <th> macOS 安装包（.dmg） <a href="platform.html#macos">[帮助]</a></th>
-    <td colspan="6"> <a href="https://julialang-s3.julialang.org/bin/mac/x64/0.7/julia-0.7.0-beta-mac64.dmg">10.8+ 64-bit</a> </td>
+    <td colspan="6"> <a href="downloads/julia-0.7.0-beta-mac64.dmg">10.8+ 64-bit</a> </td>
 </tr>
 <tr>
     <th> 通用Linux二进制文件（x86） <a href="platform.html#generic-binaries">[帮助]</a></th>
-    <td colspan="3"> <a href="https://julialang-s3.julialang.org/bin/linux/x86/0.7/julia-0.7.0-beta-linux-i686.tar.gz">32-bit</a>
-        (<a href="https://julialang-s3.julialang.org/bin/linux/x86/0.7/julia-0.7.0-beta-linux-i686.tar.gz.asc">GPG</a>)</td>
-    <td colspan="3"> <a href="https://julialang-s3.julialang.org/bin/linux/x64/0.7/julia-0.7.0-beta-linux-x86_64.tar.gz">64-bit</a>
-        (<a href="https://julialang-s3.julialang.org/bin/linux/x64/0.7/julia-0.7.0-beta-linux-x86_64.tar.gz.asc">GPG</a>)</td>
+    <td colspan="3"> <a href="downloads/julia-0.7.0-beta-linux-i686.tar.gz">32-bit</a>
+        (<a href="downloads/julia-0.7.0-beta-linux-i686.tar.gz.asc">GPG</a>)</td>
+    <td colspan="3"> <a href="downloads/julia-0.7.0-beta-linux-x86_64.tar.gz">64-bit</a>
+        (<a href="downloads/julia-0.7.0-beta-linux-x86_64.tar.gz.asc">GPG</a>)</td>
 </tr>
 <tr>
     <th> 通用FreeBSD二进制文件（x86） <a href="platform.html#generic-binaries">[help]</a></th>
-    <td colspan="6"> <a href="https://julialang-s3.julialang.org/bin/freebsd/x64/0.7/julia-0.7.0-freebsd-x86_64.tar.gz">64-bit</a>
-        (<a href="https://julialang-s3.julialang.org/bin/freebsd/x64/0.7/julia-0.7.0-freebsd-x86_64.tar.gz.asc">GPG</a>)</td>
+    <td colspan="6"> <a href="downloads/julia-0.7.0-freebsd-x86_64.tar.gz">64-bit</a>
+        (<a href="downloads/julia-0.7.0-freebsd-x86_64.tar.gz.asc">GPG</a>)</td>
 </tr>
 <tr>
     <th> 源码 </th>
-    <td colspan="2"> <a href="https://github.com/JuliaLang/julia/releases/download/v0.7.0-beta/julia-0.7.0-beta.tar.gz">Tarball</a>
-        (<a href="https://github.com/JuliaLang/julia/releases/download/v0.7.0-beta/julia-0.7.0-beta.tar.gz.asc">GPG</a>) </td>
-    <td colspan="2"> <a href="https://github.com/JuliaLang/julia/releases/download/v0.7.0-beta/julia-0.7.0-beta-full.tar.gz">Tarball with dependencies</a>
-        (<a href="https://github.com/JuliaLang/julia/releases/download/v0.7.0-beta/julia-0.7.0-beta-full.tar.gz.asc">GPG</a>) </td>
+    <td colspan="2"> <a href="downloads/julia-0.7.0-beta.tar.gz">Tarball</a>
+        (<a href="downloads/julia-0.7.0-beta.tar.gz.asc">GPG</a>) </td>
+    <td colspan="2"> <a href="downloads/julia-0.7.0-beta-full.tar.gz">Tarball with dependencies</a>
+        (<a href="downloads/julia-0.7.0-beta-full.tar.gz.asc">GPG</a>) </td>
     <td colspan="2"> <a href="https://github.com/JuliaLang/julia/tree/v0.7.0-beta">GitHub</a> </td>
 </tr>
 </tbody>
