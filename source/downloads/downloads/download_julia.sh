@@ -35,18 +35,28 @@ download_julia(){
     for platform in "linux" "winnt" "freebsd"; do
       url="$(get_url $platform $arch $1)"
       download $url
+      if [[ $platform == "linux" || $platform == "freebsd" ]]; then
+        download "$url.asc"
+      fi
     done
 
   done
 
   url="$(get_url linux armv7l $1)"
   download $url
+  download "$url.asc"
 
   url="$(get_url linux aarch64 $1)"
   download $url
+  download "$url.asc"
 
   url="$(get_url "source" any $1)"
   download $url
+  download "$url.asc"
+
+  url="https://github.com/JuliaLang/julia/releases/download/v$1/julia-$1-full.tar.gz"
+  download $url
+  download "$url.asc"
 }
 
 download_julia 0.6.3
