@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>我们为什么创造Julia语言 | Julia中文社区</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="这是一篇重译，参考了2012年的一篇豆瓣（链接在最后）。  简短来讲，是因为我们很贪婪。 我们之中有些是使用MATLAB的重量级用户，有些是来自Lisp的极客，还有一些是来自Python和Ruby的魔法师，甚至还有来自Perl社区的大魔法师。我们之中还有从胡子都没长齐时就开始使用Mathematica的。其中的有些人现在都没长胡子喱！我们像是疯了一样用R画了越来越多的图，而C是我们的硬核摇滚（也">
+<meta name="keywords" content="官方博客翻译">
+<meta property="og:type" content="article">
+<meta property="og:title" content="我们为什么创造Julia语言">
+<meta property="og:url" content="http://juliacn.com/blog/2018/06/30/why-we-created-julia/index.html">
+<meta property="og:site_name" content="Julia中文社区">
+<meta property="og:description" content="这是一篇重译，参考了2012年的一篇豆瓣（链接在最后）。  简短来讲，是因为我们很贪婪。 我们之中有些是使用MATLAB的重量级用户，有些是来自Lisp的极客，还有一些是来自Python和Ruby的魔法师，甚至还有来自Perl社区的大魔法师。我们之中还有从胡子都没长齐时就开始使用Mathematica的。其中的有些人现在都没长胡子喱！我们像是疯了一样用R画了越来越多的图，而C是我们的硬核摇滚（也">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-07-09T08:47:54.168Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="我们为什么创造Julia语言">
+<meta name="twitter:description" content="这是一篇重译，参考了2012年的一篇豆瓣（链接在最后）。  简短来讲，是因为我们很贪婪。 我们之中有些是使用MATLAB的重量级用户，有些是来自Lisp的极客，还有一些是来自Python和Ruby的魔法师，甚至还有来自Perl社区的大魔法师。我们之中还有从胡子都没长齐时就开始使用Mathematica的。其中的有些人现在都没长胡子喱！我们像是疯了一样用R画了越来越多的图，而C是我们的硬核摇滚（也">
+  
+    <link rel="alternate" href="/atom.xml" title="Julia中文社区" type="application/atom+xml">
+  
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="/css/styles.css">
+  
+
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="main-menu-navbar">
+      <ul class="nav navbar-nav">
+        
+          <li><a class=""
+                 href="/index.html">主页</a></li>
+        
+          <li><a class=""
+                 href="/julialang/">Julia语言</a></li>
+        
+          <li><a class=""
+                 href="/meetups/">活动</a></li>
+        
+          <li><a class=""
+                 href="/downloads/">下载</a></li>
+        
+          <li><a class=""
+                 href="/docs/">文档</a></li>
+        
+          <li><a class=""
+                 href="/about/">关于</a></li>
+        
+          <li><a class=""
+                 href="/archives/">归档</a></li>
+        
+      </ul>
+
+      <!--
+      <ul class="nav navbar-nav navbar-right">
+        
+          <li><a href="/atom.xml" title="RSS Feed"><i class="fa fa-rss"></i></a></li>
+        
+      </ul>
+      -->
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+  <div class="container">
+    <div class="blog-header">
+  <h1 class="blog-title">Julia中文社区</h1>
+  
+</div>
+
+    <div class="row">
+        <div class="col-sm-8 blog-main">
+          <article id="post-why-we-created-julia" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <h1 class="article-title" itemprop="name">
+      我们为什么创造Julia语言
+    </h1>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/blog/2018/06/30/why-we-created-julia/" class="article-date"><time datetime="2018-06-30T06:58:24.000Z" itemprop="datePublished">2018-06-30</time></a>
+</div>
+
+    
+    
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>这是一篇重译，参考了2012年的一篇豆瓣（链接在最后）。</p>
+</blockquote>
+<p>简短来讲，是因为我们很贪婪。</p>
+<p>我们之中有些是使用MATLAB的重量级用户，有些是来自Lisp的极客，还有一些是来自Python和Ruby的魔法师，甚至还有来自Perl社区的大魔法师。我们之中还有从胡子都没长齐时就开始使用Mathematica的。其中的有些人现在都没长胡子喱！我们像是疯了一样用R画了越来越多的图，而C是我们的硬核摇滚（也有大杀器之意）。</p>
+<p>我们热爱所有这些语言，他们实在很好很强大。在我们从事的领域（科学计算，机器学习，数据挖掘，大规模线性代数计算，分布式和并行计算）中，每一种语言都对某一项工作的一项特定需求非常完美，但是却无法胜任其它需求。于是使用什么语言都需要我们去权衡。</p>
+<p>而我们很贪婪，我们还想要更多。</p>
+<p>我们想要的是一个自由开源的语言，并且它同时拥有C的速度和Ruby的动态性；我们想要一个具有<a href="">同像性</a>（可以将语言的脚本本身当作数据进行处理）的语言，它有着真正的和lisp一样的宏，但是却像Matlab一样有着显然的，类似于数学表达式的标记；我们想要一个既可以像Python一样作为通用编程语言的工具，又可以像R那样适用于统计分析，能像Perl那样自然地处理字符串，能像Matlab那样给力地处理矩阵运算，它还要能像shell一样作为胶水将各种程序粘合在一起；我们想要一个简单易学的语言，同时它还能让最苛刻的魔法师们（hackers）开心。我们希望它是交互式的，但我们也希望它能被编译。</p>
+<p>（我们刚刚有提它要和C一样快嘛？！）</p>
+<p>当我们在构思这些需求的时候，我们发现它还得有Hadoop这样强大的分布式能力，却不想要Hadoop里面那些冗长Jave和XML模板，更不想被被迫在几个GB的日志文件和几百台机器里找bug。我们不想要那些令人费解的层次结构。我们想让简单的标量循环能被编译成仅用寄存器和一块CPU的干净的机器码。我们希望简单地写下<code>A*B</code>就能够在成千上万的机器上用成千上万地运算来计算这个庞大的矩阵乘法。</p>
+<p>如无必要，那就不用声明类型。但当我们需要多态函数（polymorphic functions）时，我们也想要用泛型编程（generic programming）仅仅书写一次算法，就能够在无限多的类型上使用。我们想要多重派发（multiple dispatch）来为一个函数所有可能的参数选出最佳的执行方法。这些参数可能有着不同定义，不同类型，但是却有着相同功能。在拥有以上能力的同时，我们还希望这种语言简单，干净。</p>
+<p>要求有点多，是不是？</p>
+<p>尽管我们意识到了自己有多贪心，我们还是想要拥有这些功能。大概在两年半之前，我们开始创造这种能满足我们贪念的语言。它还没有完工——但是已经可以发布一个1.0版本了（其实等了6年才要发布）——我们创造的这个语言叫做Julia。它已经实现了我们这次乱七八糟需求的90%，而现在她需要来自更多人的乱七八糟的需求，来让她走得更远。如果你也是一位贪心不足，不可理喻，需索无度的码场二逼青年，希望你能来试试这个东东。</p>
+<p>
+作者：Jeff Bezanson, Stefan Karpinski, Viral Shah, Alan Edelman
+<br>
+译者：Roger
+<br>
+翻译自：<a href="https://julialang.org/blog/2012/02/why-we-created-julia" target="_blank" rel="noopener">Why we create Julia</a>
+<br>
+参考自：<a href="https://www.douban.com/note/203945680/" target="_blank" rel="noopener">豆瓣：为什么我们要创造Julia</a>
+</p>
+
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      <a data-url="http://juliacn.com/blog/2018/06/30/why-we-created-julia/" data-id="cjje1xsen00002d61ug1jfa20" class="article-share-link">
+        <i class="fa fa-share"></i> Share
+      </a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/官方博客翻译/">官方博客翻译</a></li></ul>
+
+
+    </footer>
+  </div>
+  
+    
+
+  
+</article>
+
+
+
+
+        </div>
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          
+  <div class="sidebar-module sidebar-module-inset">
+  <h4>About</h4>
+  <p>这里是<a href="/about">Julia中文社区</a>，关于Julia语言请点击：<a href="/julialang">Julia语言</a>， 关于社区，请点击：<a href="/about">Julia中文社区</a>。QQ群：316628299</p>
+
+</div>
+
+
+  
+
+
+  
+  <div class="sidebar-module">
+    <h4>Tags</h4>
+    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/官方博客翻译/">官方博客翻译</a><span class="sidebar-module-list-count">1</span></li></ul>
+  </div>
+
+
+
+  
+  <div class="sidebar-module">
+    <h4>Tag Cloud</h4>
+    <p class="tagcloud">
+      <a href="/tags/官方博客翻译/" style="font-size: 10px;">官方博客翻译</a>
+    </p>
+  </div>
+
+
+  
+  <div class="sidebar-module">
+    <h4>Archives</h4>
+    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2018/06/">June 2018</a><span class="sidebar-module-list-count">1</span></li></ul>
+  </div>
+
+
+
+  
+  <div class="sidebar-module">
+    <h4>Recents</h4>
+    <ul class="sidebar-module-list">
+      
+        <li>
+          <a href="/blog/2018/06/30/why-we-created-julia/">我们为什么创造Julia语言</a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+
+        </div>
+    </div>
+  </div>
+  <footer class="blog-footer">
+  <div class="container">
+    <div id="footer-info" class="inner">
+      &copy; 2018 JuliaCN<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+  
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" integrity="sha384-8gBf6Y4YYq7Jx97PIqmTwLPin4hxIzQw5aDmUg/DDhul9fFpbbLcLh3nTIIDJKhx" crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+
+<script src="/js/script.js"></script>
+
+</body>
+</html>

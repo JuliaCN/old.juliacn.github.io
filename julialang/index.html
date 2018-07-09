@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>关于Julia语言 | Julia中文社区</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Julia是一个为数值计算设计的高性能的高级动态语言。Julia提供了一个复杂精巧的编译器，分布式的并行计算环境，精确地数值计算以及一个可扩展的数学函数库。Julia的基础库大部分由纯Julia语言编写，但是也集成了在特定领域（如线性代数，随机数生成，信号处理和字符串处理）很多成熟的库。此外，Julia开发者社区也不断地通过Julia自带的包管理器在贡献大量的包（package）。此外，由Jupy">
+<meta property="og:type" content="website">
+<meta property="og:title" content="关于Julia语言">
+<meta property="og:url" content="http://juliacn.com/julialang/index.html">
+<meta property="og:site_name" content="Julia中文社区">
+<meta property="og:description" content="Julia是一个为数值计算设计的高性能的高级动态语言。Julia提供了一个复杂精巧的编译器，分布式的并行计算环境，精确地数值计算以及一个可扩展的数学函数库。Julia的基础库大部分由纯Julia语言编写，但是也集成了在特定领域（如线性代数，随机数生成，信号处理和字符串处理）很多成熟的库。此外，Julia开发者社区也不断地通过Julia自带的包管理器在贡献大量的包（package）。此外，由Jupy">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="http://juliacn.com/julialang/index/benchmarks.svg">
+<meta property="og:image" content="http://juliacn.com/julialang/index/ijulia.png">
+<meta property="og:image" content="http://juliacn.com/julialang/index/gadfly-demo.png">
+<meta property="og:updated_time" content="2018-07-09T08:47:54.170Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="关于Julia语言">
+<meta name="twitter:description" content="Julia是一个为数值计算设计的高性能的高级动态语言。Julia提供了一个复杂精巧的编译器，分布式的并行计算环境，精确地数值计算以及一个可扩展的数学函数库。Julia的基础库大部分由纯Julia语言编写，但是也集成了在特定领域（如线性代数，随机数生成，信号处理和字符串处理）很多成熟的库。此外，Julia开发者社区也不断地通过Julia自带的包管理器在贡献大量的包（package）。此外，由Jupy">
+<meta name="twitter:image" content="http://juliacn.com/julialang/index/benchmarks.svg">
+  
+    <link rel="alternate" href="/atom.xml" title="Julia中文社区" type="application/atom+xml">
+  
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="/css/styles.css">
+  
+
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="main-menu-navbar">
+      <ul class="nav navbar-nav">
+        
+          <li><a class=""
+                 href="/index.html">主页</a></li>
+        
+          <li><a class="active"
+                 href="/julialang/">Julia语言</a></li>
+        
+          <li><a class=""
+                 href="/meetups/">活动</a></li>
+        
+          <li><a class=""
+                 href="/downloads/">下载</a></li>
+        
+          <li><a class=""
+                 href="/docs/">文档</a></li>
+        
+          <li><a class=""
+                 href="/about/">关于</a></li>
+        
+          <li><a class=""
+                 href="/archives/">归档</a></li>
+        
+      </ul>
+
+      <!--
+      <ul class="nav navbar-nav navbar-right">
+        
+          <li><a href="/atom.xml" title="RSS Feed"><i class="fa fa-rss"></i></a></li>
+        
+      </ul>
+      -->
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+  <div class="container">
+    <div class="blog-header">
+  <h1 class="blog-title">Julia中文社区</h1>
+  
+</div>
+
+    <div class="row">
+        <div class="col-sm-8 blog-main">
+          <article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <h1 class="article-title" itemprop="name">
+      关于Julia语言
+    </h1>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/julialang/index.html" class="article-date"><time datetime="2018-06-30T08:35:29.000Z" itemprop="datePublished">2018-06-30</time></a>
+</div>
+
+    
+    
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a href="http://julialang.org" target="_blank" rel="noopener">Julia</a>是一个为数值计算设计的高性能的高级动态语言。Julia提供了一个复杂精巧的编译器，<a href="http://docs.julialang.org/en/stable/manual/parallel-computing/" target="_blank" rel="noopener">分布式</a>的并行计算环境，精确地数值计算以及一个可扩展的<a href="https://docs.julialang.org/en/latest/#Standard-Library-1" target="_blank" rel="noopener">数学函数库</a>。Julia的基础库大部分由纯Julia语言编写，但是也集成了在特定领域（如<a href="http://docs.julialang.org/en/stable/stdlib/linalg/" target="_blank" rel="noopener">线性代数</a>，<a href="http://docs.julialang.org/en/stable/stdlib/numbers/#random-numbers" target="_blank" rel="noopener">随机数生成</a>，<a href="http://docs.julialang.org/en/stable/stdlib/math/#signal-processing" target="_blank" rel="noopener">信号处理</a>和<a href="http://docs.julialang.org/en/stable/stdlib/strings/#strings" target="_blank" rel="noopener">字符串处理</a>）很多成熟的库。此外，Julia开发者社区也不断地通过Julia自带的包管理器在贡献大量的<a href="http://pkg.julialang.org" target="_blank" rel="noopener">包（package）</a>。此外，由<a href="http://jupyter.org" target="_blank" rel="noopener">Jupyter</a>和Julia社区共同努力的成果<a href="https://github.com/JuliaLang/IJulia.jl" target="_blank" rel="noopener">IJulia</a>，使得你可以在笔记本（notebook）界面里使用Julia。</p>
+<!--
+This keynote talk by Stefan Karpinski at [ODSC Boston](https://www.odsc.com/boston) (2016) on [the two language problem](https://www.youtube.com/watch?v=B9moDuSYzGo) explains much of the motivation behind Julia:
+
+<div style="text-align: center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/B9moDuSYzGo" frameborder="0" allowfullscreen></iframe>
+</div>
+-->
+<p>Julia程序使用一种基于多重派发的编程范式，通过对不同类型的组合（类型可以是用户自定义的）定义和<a href="(https://en.wikipedia.org/wiki/Function_overloading)">重载</a>函数来进行组织。对于在不同系统上使用Julia的好处的深度讨论可以在下面的部分或者是<a href="http://docs.julialang.org/en/stable/manual/introduction/" target="_blank" rel="noopener">介绍</a>和<a href="http://docs.julialang.org" target="_blank" rel="noopener">在线指南</a>中找到。</p>
+<h1>Julia语言的特性</h1>
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Multiple_dispatch" target="_blank" rel="noopener">多重派发</a>：提供了为多重类型的<strong>组合</strong>定义函数的能力</li>
+<li>动态类型系统：为文档，优化和分发而定义的类型系统</li>
+<li>内建的包管理器</li>
+<li><a href="http://docs.julialang.org/en/stable/manual/metaprogramming/#macros" target="_blank" rel="noopener">Lisp一样的宏</a>和其它<a href="http://docs.julialang.org/en/stable/manual/metaprogramming/" target="_blank" rel="noopener">元编程工具</a></li>
+<li>调用Python：Julia可以通过<a href="https://github.com/stevengj/PyCall.jl" target="_blank" rel="noopener">PyCall</a>直接调用Python的函数</li>
+<li><a href="http://docs.julialang.org/en/stable/manual/calling-c-and-fortran-code/" target="_blank" rel="noopener">调用C</a>：Julia可以简单地（无需额外对特殊API的封装）调用C代码</li>
+<li>像shell一样强大的<a href="http://docs.julialang.org/en/stable/manual/running-external-programs/" target="_blank" rel="noopener">管理其它进程的能力</a></li>
+<li>为<a href="http://docs.julialang.org/en/stable/manual/parallel-computing/" target="_blank" rel="noopener">并行和分布式计算</a>而设计</li>
+<li><a href="http://en.wikipedia.org/wiki/Coroutine" target="_blank" rel="noopener">协程</a>：轻量级“绿色”线程</li>
+<li><a href="http://docs.julialang.org/en/stable/manual/types/" target="_blank" rel="noopener">用户定义的类型</a>和内建类型一样快和兼容</li>
+<li>自动为不同类型生成的高性能特别优化的代码</li>
+<li>简洁可扩展的<a href="http://docs.julialang.org/en/stable/manual/conversion-and-promotion/" target="_blank" rel="noopener">类型转换和提升</a></li>
+<li>高效支持<a href="http://en.wikipedia.org/wiki/Unicode" target="_blank" rel="noopener">Unicode</a>包括但不限于<a href="http://en.wikipedia.org/wiki/UTF-8" target="_blank" rel="noopener">UTF-8</a>字符</li>
+<li><a href="https://github.com/JuliaLang/julia/blob/master/LICENSE.md" target="_blank" rel="noopener">MIT协议</a>：免费的开源协议</li>
+</ul>
+<h1>高性能的JIT编译器</h1>
+<p>Julia基于LLVM的即时编译（JIT）编译器和语言本身的设计使得它可以达到和C语言接近或者一致的性能。为了感受到Julia和其它语言相比之下在数值/科学计算方面的性能，我们为很多语言写了一些小的微基准（micro-benchmark）测试：<a href="https://github.com/JuliaLang/Microbenchmarks/blob/master/perf.c" target="_blank" rel="noopener">C</a>, <a href="https://github.com/JuliaLang/Microbenchmarks/blob/master/perf.f90" target="_blank" rel="noopener">Fortran</a>, <a href="https://github.com/JuliaLang/Microbenchmarks/blob/master/perf.jl" target="_blank" rel="noopener">Julia</a>, <a href="https://github.com/JuliaLang/Microbenchmarks/blob/master/perf.py" target="_blank" rel="noopener">Python</a>, <a href="https://github.com/JuliaLang/Microbenchmarks/blob/master/perf.m" target="_blank" rel="noopener">Matlab/Octave</a>, <a href="https://github.com/JuliaLang/Microbenchmarks/blob/master/perf.R" target="_blank" rel="noopener">R</a>, <a href="https://github.com/JuliaLang/Microbenchmarks/blob/master/perf.js" target="_blank" rel="noopener">JavaScript</a>, <a href="https://github.com/JuliaLang/Microbenchmarks/tree/master/java/src/main/java" target="_blank" rel="noopener">Java</a>, <a href="https://github.com/JuliaLang/Microbenchmarks/blob/master/perf.lua" target="_blank" rel="noopener">Lua</a>, <a href="https://github.com/JuliaLang/Microbenchmarks/blob/master/perf.nb" target="_blank" rel="noopener">Mathematica</a>.我们鼓励你查看这些链接后的具体源码来感受在不同语言里进行数值计算是多么地难易程度。</p>
+<p><img src="index/benchmarks.svg" alt="benchmark"></p>
+<center>
+<div class="figure" style="align: center; width: 77%">
+<p class="caption"><b>图片:</b>
+相对于C语言的基准测试（越小越好，C的性能 = 1.0）。从<a href="http://nbviewer.ipython.org/url/julialang.org/benchmarks/benchmarks.ipynb" target="_blank" rel="noopener">这个笔记本程序</a>使用<a href="https://github.com/dcjones/Gadfly.jl" target="_blank" rel="noopener">Gadfly</a>和<a href="https://github.com/JuliaLang/IJulia.jl" target="_blank" rel="noopener">IJulia</a>绘制。更详细的信息请查看<a href="/benchmarks/">基准测试页面</a>。
+</p>
+</div>
+</center>
+<h1>快速感受一下Julia</h1>
+<p>为了快速感受一下Julia写起来是什么感觉，这里有一个用来产生Mandelbrot和随机矩阵统计的基准测试代码：</p>
+<figure class="highlight julia"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> mandel(z)</span><br><span class="line">    c = z</span><br><span class="line">    maxiter = <span class="number">80</span></span><br><span class="line">    <span class="keyword">for</span> n = <span class="number">1</span>:maxiter</span><br><span class="line">        <span class="keyword">if</span> abs2(z) &gt; <span class="number">4</span></span><br><span class="line">            <span class="keyword">return</span> n-<span class="number">1</span></span><br><span class="line">        <span class="keyword">end</span></span><br><span class="line">        z = z^<span class="number">2</span> + c</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">    maxiter</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> randmatstat(t)</span><br><span class="line">    n = <span class="number">5</span></span><br><span class="line">    v = zeros(t)</span><br><span class="line">    w = zeros(t)</span><br><span class="line">    <span class="keyword">for</span> i = <span class="number">1</span>:t</span><br><span class="line">        a = randn(n,n)</span><br><span class="line">        b = randn(n,n)</span><br><span class="line">        c = randn(n,n)</span><br><span class="line">        d = randn(n,n)</span><br><span class="line">        P = [a b c d]</span><br><span class="line">        Q = [a b; c d]</span><br><span class="line">        v[i] = trace((P.'*P)^<span class="number">4</span>)</span><br><span class="line">        w[i] = trace((Q.'*Q)^<span class="number">4</span>)</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">    std(v)/mean(v), std(w)/mean(w)</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<p>以上的代码已经足够清楚了，并且应该对任何使用过其它数学语言的人都很舒旭。Julia对于<code>randmatstat</code>的实现比起<a href="https://github.com/JuliaLang/Microbenchmarks/blob/master/perf.c#L135" target="_blank" rel="noopener">C语言的实现</a>要简单得多，却又没有造成太多的性能损失，
+计划中的编译器优化将会去除这里的性能差距。设计上，Julia使得你可以使用简单的循环（low-level loops）亦或者是在牺牲非常有限的
+性能的下使用高级编程范式（high-level programming style）来在用非常简单地方式实现复杂的算法。这种连续地编程层次上的变化正是
+使用Julia来编程的特点，也是Julia语言本身所设计的特性。</p>
+<h1>为并行计算和云计算设计</h1>
+<p>Julia并不会强加给用户任何一种特别的并行范式，而是提供一系列的<a href="http://docs.julialang.org/en/stable/manual/parallel-computing" target="_blank" rel="noopener">分布式计算的关键组件</a>，使得其足够灵活去支持多种并行方案，并且允许用户增加更多。下面简单地例子展示了如何并行地抛硬币并且计数。</p>
+<figure class="highlight julia"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">nheads = <span class="meta">@parallel</span> (+) <span class="keyword">for</span> i = <span class="number">1</span>:<span class="number">100000000</span></span><br><span class="line">    rand(<span class="built_in">Bool</span>)</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<p>着里的计算会被自动分布到所有可以使用的计算节点（作为进程），然后返回值会被求和（<code>+</code>），然后返回到发起进程的节点。</p>
+<p>这里是一个基于web的交互式<a href="https://github.com/JuliaLang/IJulia.jl" target="_blank" rel="noopener">IJulia notebook</a>的截图，这里使用了<a href="https://github.com/dcjones/Gadfly.jl" target="_blank" rel="noopener">Gadfly</a>。你也可以通过<a href="http://www.juliabox.com" target="_blank" rel="noopener">JuliaBox</a>来通过一个按照需求预分配的Docker沙盒容器在你的浏览器中使用IJulia notebook。</p>
+<p><img src="index/ijulia.png" alt=""></p>
+<p>Julia Box为云上的数据处理代码编辑，分享，执行，debug，合作开发，分析，数据浏览和可视化提供了一种可能性。最终，JuliaBox希望使得人们可以避免登陆和管理机器和数据，从而直接关心需要解决的实际问题。</p>
+<p><a href="https://github.com/GiovineItalia/Gadfly.jl" target="_blank" rel="noopener">Gadfly</a> 可以在不同的渲染后端（SVG，PDF，PNG等等）上绘图。交互式的图片可以通过<a href="https://github.com/JuliaGizmos/Interact.jl" target="_blank" rel="noopener">Interact.jl</a>来实现。一些简单的Gadfly实例在下面展示：</p>
+<p><img src="index/gadfly-demo.png" alt=""></p>
+<h1>开源免费并且对库友好</h1>
+<p>Julia的核心代码都是<a href="http://en.wikipedia.org/wiki/MIT_License" target="_blank" rel="noopener">MIT许可协议</a>。很多Julia模块所使用的库也都是开源协议<a href="http://en.wikipedia.org/wiki/GNU_General_Public_License" target="_blank" rel="noopener">GPL</a>, <a href="http://en.wikipedia.org/wiki/GNU_Lesser_General_Public_License" target="_blank" rel="noopener">LGPL</a>, and <a href="http://en.wikipedia.org/wiki/BSD_licenses" target="_blank" rel="noopener">BSD</a>（因此包含语言，用户界面和库的环境是在GPL协议下的）。语言本身可以被编译成共享库，所以用户可以将Julia和自己的C/Fortran或者其它第三方库一起发行。你也可以通过Julia交互式界面来调用外部库，从而获得即刻的反馈。查看<a href="https://github.com/JuliaLang/julia/blob/master/LICENSE.md" target="_blank" rel="noopener">LICENSE</a>以了解Julia的协议细则。</p>
+
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      <a data-url="http://juliacn.com/julialang/index.html" data-id="cjje1xsf400082d61usdkkskd" class="article-share-link">
+        <i class="fa fa-share"></i> Share
+      </a>
+      
+      
+
+    </footer>
+  </div>
+  
+    
+
+  
+</article>
+
+
+
+
+        </div>
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          
+  <div class="sidebar-module sidebar-module-inset">
+  <h4>About</h4>
+  <p>这里是<a href="/about">Julia中文社区</a>，关于Julia语言请点击：<a href="/julialang">Julia语言</a>， 关于社区，请点击：<a href="/about">Julia中文社区</a>。QQ群：316628299</p>
+
+</div>
+
+
+  
+
+
+  
+  <div class="sidebar-module">
+    <h4>Tags</h4>
+    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/官方博客翻译/">官方博客翻译</a><span class="sidebar-module-list-count">1</span></li></ul>
+  </div>
+
+
+
+  
+  <div class="sidebar-module">
+    <h4>Tag Cloud</h4>
+    <p class="tagcloud">
+      <a href="/tags/官方博客翻译/" style="font-size: 10px;">官方博客翻译</a>
+    </p>
+  </div>
+
+
+  
+  <div class="sidebar-module">
+    <h4>Archives</h4>
+    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2018/06/">June 2018</a><span class="sidebar-module-list-count">1</span></li></ul>
+  </div>
+
+
+
+  
+  <div class="sidebar-module">
+    <h4>Recents</h4>
+    <ul class="sidebar-module-list">
+      
+        <li>
+          <a href="/blog/2018/06/30/why-we-created-julia/">我们为什么创造Julia语言</a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+
+        </div>
+    </div>
+  </div>
+  <footer class="blog-footer">
+  <div class="container">
+    <div id="footer-info" class="inner">
+      &copy; 2018 JuliaCN<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+  
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" integrity="sha384-8gBf6Y4YYq7Jx97PIqmTwLPin4hxIzQw5aDmUg/DDhul9fFpbbLcLh3nTIIDJKhx" crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+
+<script src="/js/script.js"></script>
+
+</body>
+</html>
