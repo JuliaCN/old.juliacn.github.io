@@ -52,18 +52,18 @@ Julia User Meet Up是Julia社区的传统活动。旨在为Julian互相分享技
 - **9:00～9:10**，开场
 - **9:10 ～ 9:50**，机器学习和编程语言（Viral Shah，英文）
 - **10:00～10:40**， 用Julia进行优化建模及求解（覃含章，中文）
-- **10:50～11:20**，*题目待定*（张常有，中文）
+- **10:50～11:20**，基于矩阵乘积态（MPS）的手写数字生成（张潘，中文）
 - **11：30～12:00**，在Jetbrain平台上为Julia打造的IDE插件（千里冰封，中文）
 
 ---
 
 - **2:00～2:30**，Julia程序的设计，利用多重派发实现的面向对象程序设计和元编程（罗秀哲，中文）
 - **2:40～3:10**，Julia性能挑战之路（刘金国，中文）
-- **3:20～3:50**，Julia在量化金融里的应用（谭磊，中文，待定）
-- **4:00 ～ 4:30**，基于矩阵乘积态（MPS）的手写数字生成（张潘，中文）
+- **3:20～3:50**，Julia之债卷做市交易（谭磊，中文，不直播）
+- **4:00 ～ 4:30**，*题目待定*（张常有，中文）
 - **4:40～5:10**，如何参加GSoC，Julia境内mirror（斯大卫，中文）
 
-### 内容简介
+<!-- ### 内容简介
 
 #### 机器学习和编程语言
 
@@ -85,7 +85,7 @@ https://julialang.org/blog/2017/12/ml&pl
 
 > While machine learning does not yet have a dedicated language, several efforts are effectively creating hidden new languages underneath a Python API (like TensorFlow) while others are reusing Python as a modeling language (like PyTorch). We'd like to ask -- are new ML-tailored languages required, and if so, why?
 
-> We will also discuss how Julia evolved to get where it is today, and how it might evolve to taking on some of the challenges posed by machine learning.
+> We will also discuss how Julia evolved to get where it is today, and how it might evolve to taking on some of the challenges posed by machine learning. -->
 
 
 
