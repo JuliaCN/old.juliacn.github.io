@@ -14,10 +14,11 @@ Julia User Meet Up是Julia社区的传统活动。旨在为Julian互相分享技
 到目前为止，我们将有以下Julian分享自己的心得和技术：
 
 - Viral Shah，Julia语言项目发起人之一，Julia Computing公司CEO （直播）
+- 覃含章，现麻省理工学院（MIT）计算科学与工程博士在读，清华大学工业工程与数学双学士，研究方向为优化理论，在线学习，数据驱动的运营管理等。（直播）
 - 张常有，中国科学院软件研究所教授
 - 张潘，中国科学院物理研究所教授
-- 刘金国，中国科学院物理研究所博士后
-- 罗秀哲，Julia中文社区主要成员
+- 刘金国，中国科学院物理研究所博士后，Julia上的量子算法包Yao.jl的作者之一
+- 罗秀哲，Julia中文社区主要成员，物理所研究助理，Julia上的量子算法包Yao.jl的作者之一
 - 千里冰封，Julia Jetbrain平台IDE插件主要作者
 - 斯大卫，RandomNumbers.jl作者，GSoC 2016学员，目前Julia package境内Mirror（在建）主要维护者
 - Bigtan，山西证卷公司固定收益部，投资经理
@@ -72,19 +73,23 @@ https://julialang.org/blog/2017/12/ml&pl
 
 > We will also discuss how Julia evolved to get where it is today, and how it might evolve to taking on some of the challenges posed by machine learning.
 
-##### 基于矩阵乘积态（MPS）的手写数字识别（张潘，中文，10:20 ～ 11:00）
+##### 用Julia进行优化建模及求解（覃含章，中文，10:20～11:10）
 
-##### Julia在量化金融里的应用（谭磊，中文，11:10～11:40，待定）
+##### 基于矩阵乘积态（MPS）的手写数字识别（张潘，中文，11:20 ～ 11:50）
 
-##### 编写高效的Julia代码（刘金国，中文，2:00～2:50）
+---
 
-##### Julia程序的设计，利用多重派发实现的面向对象程序设计和元编程（罗秀哲，中文，3:00～3:50）
+##### Julia程序的设计，利用多重派发实现的面向对象程序设计和元编程（罗秀哲，中文，2:00～2:50）
+
+##### Julia在量化金融里的应用（谭磊，中文，3:00～3:30，待定）
+
+##### Julia性能挑战之路（刘金国，中文，3:40～4:10）
 
 ##### 休息
 
-##### 在Jetbrain平台上为Julia打造的IDE插件（千里冰封，中文，4：00～4:50）
+##### 在Jetbrain平台上为Julia打造的IDE插件（千里冰封，中文，4：20～4:50）
 
-##### 如何参加GSoC，Julia境内mirror（斯大卫，中文，5:00～6:00）
+##### 如何参加GSoC，Julia境内mirror（斯大卫，中文，5:00～5:30）
 
 ### 主办
 
