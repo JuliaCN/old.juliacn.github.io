@@ -35,7 +35,7 @@ Julia User Meet Up是Julia社区的传统活动。旨在为Julian互相分享技
 
 ### 活动地点
 
-中国科学院软件研究所，5号科研楼A座334会议室（5号楼裙楼，A座对面低的那边）。
+中国科学院软件研究所，5号科研楼裙楼
 
 ### 活动直播
 
@@ -60,7 +60,7 @@ Julia User Meet Up是Julia社区的传统活动。旨在为Julian互相分享技
 - **2:00～2:30**，Julia程序的设计，利用多重派发实现的面向对象程序设计和元编程（罗秀哲，中文）
 - **2:40～3:10**，Julia性能挑战之路（刘金国，中文）
 - **3:20～3:50**，Julia之债卷做市交易（谭磊，中文，不直播）
-- **4:00 ～ 4:30**，*题目待定*（张常有，中文）
+- **4:00 ～ 4:30**，Julia的聚类算法性能优化（张常有，中文）
 - **4:40～5:10**，Julia编程实践（斯大卫，中文）
 
 <!-- ### 内容简介
@@ -81,7 +81,7 @@ https://julialang.org/blog/2017/12/ml&pl
 
 我将讨论Julia如何演化至今，这也许包括一些由机器学习任务带来的一些挑战。
 
-> As programming languages (PL) people, we have watched with great interest as machine learning (ML) has exploded -- and with it, the complexity of ML models and the frameworks people are using to build them. State-of-the-art models are increasingly programs, with support for programming constructs like loops and recursion, and this brings out many interesting issues in the tools we use to create them -- that is, programming languages.
+> As programming languages (PL) people, we have watched with great interest as machine learning (ML) has exploded -- and with it, the complexity of ML models and the frameworks people are using to build themt. State-of-the-art models are increasingly programs, with support for programming constructs like loops and recursion, and this brings out many interesting issues in the tools we use to create them -- that is, programming languages.
 
 > While machine learning does not yet have a dedicated language, several efforts are effectively creating hidden new languages underneath a Python API (like TensorFlow) while others are reusing Python as a modeling language (like PyTorch). We'd like to ask -- are new ML-tailored languages required, and if so, why?
 
