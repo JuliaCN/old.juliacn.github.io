@@ -17,6 +17,8 @@ get_url(){
     julia_url="$base_url-win64.exe"
   elif [[ "$platform" == "freebsd/x64" ]]; then
     julia_url="$base_url-freebsd-x86_64.tar.gz"
+  elif [[ "$platform" == "mac/x64" ]]; then
+    julia_url="$base_url-mac64.dmg"
   elif [[ $platform == "source/any" ]]; then
     julia_url="https://github.com/JuliaLang/julia/releases/download/v$version/julia-$version.tar.gz"
   fi
@@ -50,6 +52,9 @@ download_julia(){
   download $url
   download "$url.asc"
 
+  url="$(get_url mac x64 $1)"
+  download $url
+
   url="$(get_url "source" any $1)"
   download $url
   download "$url.asc"
@@ -59,5 +64,5 @@ download_julia(){
   download "$url.asc"
 }
 
-download_julia 0.6.3
-download_julia 0.7.0-beta
+download_julia 0.6.4
+download_julia 0.7.0-beta2
