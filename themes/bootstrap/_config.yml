@@ -3,6 +3,7 @@ navbar_brand: false
 menu:
   主页: index.html
   Julia语言: julialang/
+  讨论: //discourse.juliacn.com/
   活动: meetups/
   下载: downloads/
   文档: docs/
